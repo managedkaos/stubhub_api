@@ -1,0 +1,89 @@
+{
+    "ancestors": {
+        "categories": [
+            {
+                "id": 28
+            },
+            {
+                "id": 31
+            }
+        ],
+        "groupings": [
+            {
+                "id": 121
+            },
+            {
+                "id": 80916
+            }
+        ],
+        "performers": [
+            {
+                "id": 6044
+            }
+        ]
+    },
+    "attributes": [
+        {
+            "dataType": "integer",
+            "name": "stubhubMobileTicket",
+            "status": {
+                "name": "active"
+            },
+            "value": "true"
+        }
+    ],
+    "bobId": 1,
+    "categories": {
+        "primaryCategory": {
+            "id": 31,
+            "name": "Football Tickets"
+        }
+    },
+    "currencyCode": "USD",
+    "description": "Carolina Panthers at Atlanta Falcons Tickets",
+    "eventDateLocal": "2016-10-02T13:00:00-04:00",
+    "eventDateUTC": "2016-10-02T17:00:00+0000",
+    "eventMeta": {
+        "keywords": "Atlanta Falcons Carolina Panthers, Falcons Carolina, Falcons vs Panthers, Atlanta Falcons v Carolina Panthers, October 2 Georgia Dome, Georgia Dome, Atlanta Falcons vs Carolina Panthers 10/2, ticket, tickets, buy, sell",
+        "locale": "en_US",
+        "primaryAct": "Atlanta Falcons",
+        "primaryName": "Falcons vs Panthers",
+        "secondaryAct": "Carolina Panthers",
+        "secondaryName": "Carolina Panthers",
+        "seoDescription": "Carolina Panthers at Atlanta Falcons",
+        "seoTitle": "Falcons - Panthers Tickets - 2016-10-2"
+    },
+    "eventUrl": "atlanta-falcons-atlanta-georgia-dome-10-2-2016-9566731",
+    "groupings": {
+        "primaryGrouping": {
+            "id": 80916,
+            "name": "2016 Regular Season NFL Tickets"
+        }
+    },
+    "hideEventDate": false,
+    "hideEventTime": false,
+    "id": 9566731,
+    "integratedEventInd": false,
+    "performers": {
+        "primaryPerformer": {
+            "id": 6044,
+            "name": "Atlanta Falcons"
+        }
+    },
+    "status": {
+        "statusId": 2
+    },
+    "timezone": "EST",
+    "title": "Atlanta Falcons vs Carolina Panthers [10/02/2016] Tickets on StubHub!",
+    "venue": {
+        "address1": "1 Georgia Dome Drive Northwest",
+        "city": "Atlanta",
+        "configurationId": "5289",
+        "country": "US",
+        "id": 941,
+        "name": "Georgia Dome",
+        "state": "GA",
+        "venueUrl": "georgia-dome-tickets/",
+        "zipCode": "30313"
+    }
+}

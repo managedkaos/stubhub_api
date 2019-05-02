@@ -1,0 +1,12 @@
+[stubhub]
+event_url = https://api.stubhub.com/catalog/events/v2/
+inventory_url = https://api.stubhub.com/search/inventory/v1/
+login_url = https://api.stubhub.com/login
+application_token:
+consumer_key:
+consumer_secret:
+username:
+password:
+
+[ids]
+event_ids: []
