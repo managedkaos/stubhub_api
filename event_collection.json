@@ -1,0 +1,764 @@
+{
+  "numFound": 16,
+  "events": [
+    {
+      "id": 104827526,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "New Orleans Saints at Atlanta Falcons",
+      "description": "Buy and sell New Orleans vs Atlanta Mercedes-Benz Stadium tickets for January 9 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "atlanta-falcons-atlanta-tickets-1-9-2022/event/104827526/",
+      "eventDateLocal": "2022-01-09T13:00:00-0500",
+      "eventDateUTC": "2022-01-09T18:00:00+0000",
+      "createdDate": "2021-04-20T04:30:12+0000",
+      "lastUpdatedDate": "2021-08-21T19:42:01+0000",
+      "hideEventDate": false,
+      "hideEventTime": false,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1243361,
+        "venueConfigName": "Football - Falcons - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EST",
+      "performers": [
+        {
+          "id": 6044,
+          "name": "Atlanta Falcons"
+        },
+        {
+          "id": 6065,
+          "name": "New Orleans Saints",
+          "role": "AWAY_TEAM"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 28,
+            "name": "Sports"
+          },
+          {
+            "id": 31,
+            "name": "Football"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 121,
+            "name": "NFL"
+          },
+          {
+            "id": 80916,
+            "name": "Regular Season NFL"
+          }
+        ],
+        "performers": [
+          {
+            "id": 6044,
+            "name": "Atlanta Falcons"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 31,
+            "name": "Football"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 71.71,
+        "minListPrice": 55,
+        "maxListPrice": 4656.85,
+        "totalTickets": 3453,
+        "totalListings": 976
+      }
+    },
+    {
+      "id": 104827528,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "Detroit Lions at Atlanta Falcons",
+      "description": "Buy and sell Detroit vs Atlanta Mercedes-Benz Stadium tickets for December 26 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "atlanta-falcons-atlanta-tickets-12-26-2021/event/104827528/",
+      "eventDateLocal": "2021-12-26T13:00:00-0500",
+      "eventDateUTC": "2021-12-26T18:00:00+0000",
+      "createdDate": "2021-04-20T04:30:37+0000",
+      "lastUpdatedDate": "2021-08-21T19:41:52+0000",
+      "hideEventDate": false,
+      "hideEventTime": false,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1243361,
+        "venueConfigName": "Football - Falcons - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EST",
+      "performers": [
+        {
+          "id": 6044,
+          "name": "Atlanta Falcons"
+        },
+        {
+          "id": 6048,
+          "name": "Detroit Lions",
+          "role": "AWAY_TEAM"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 28,
+            "name": "Sports"
+          },
+          {
+            "id": 31,
+            "name": "Football"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 121,
+            "name": "NFL"
+          },
+          {
+            "id": 80916,
+            "name": "Regular Season NFL"
+          }
+        ],
+        "performers": [
+          {
+            "id": 6044,
+            "name": "Atlanta Falcons"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 31,
+            "name": "Football"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 37.49,
+        "minListPrice": 28,
+        "maxListPrice": 1290.06,
+        "totalTickets": 4938,
+        "totalListings": 1396
+      }
+    },
+    {
+      "id": 104828441,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "Tampa Bay Buccaneers at Atlanta Falcons",
+      "description": "Buy and sell Tampa Bay vs Atlanta Mercedes-Benz Stadium tickets for December 5 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "atlanta-falcons-atlanta-tickets-12-5-2021/event/104828441/",
+      "eventDateLocal": "2021-12-05T13:00:00-0500",
+      "eventDateUTC": "2021-12-05T18:00:00+0000",
+      "createdDate": "2021-04-20T04:30:25+0000",
+      "lastUpdatedDate": "2021-08-21T19:41:37+0000",
+      "hideEventDate": false,
+      "hideEventTime": false,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1243361,
+        "venueConfigName": "Football - Falcons - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EST",
+      "performers": [
+        {
+          "id": 6044,
+          "name": "Atlanta Falcons"
+        },
+        {
+          "id": 6182,
+          "name": "Tampa Bay Buccaneers",
+          "role": "AWAY_TEAM"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 28,
+            "name": "Sports"
+          },
+          {
+            "id": 31,
+            "name": "Football"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 121,
+            "name": "NFL"
+          },
+          {
+            "id": 80916,
+            "name": "Regular Season NFL"
+          }
+        ],
+        "performers": [
+          {
+            "id": 6044,
+            "name": "Atlanta Falcons"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 31,
+            "name": "Football"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 116.08,
+        "minListPrice": 90,
+        "maxListPrice": 7227.66,
+        "totalTickets": 2991,
+        "totalListings": 904
+      }
+    },
+    {
+      "id": 104357678,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "Kenny Chesney VIP Packages",
+      "description": "Buy and sell Kenny Chesney Atlanta Tickets for May 21 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "kenny-chesney-atlanta-tickets-5-21-2022/event/104357678/",
+      "eventDateLocal": "2022-05-21T17:02:00-0400",
+      "eventDateUTC": "2022-05-21T21:02:00+0000",
+      "createdDate": "2019-09-25T14:15:32+0000",
+      "lastUpdatedDate": "2021-06-17T18:03:35+0000",
+      "hideEventDate": false,
+      "hideEventTime": true,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1521336,
+        "venueConfigName": "Kenny Chesney VIP - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EDT",
+      "performers": [
+        {
+          "id": 5227,
+          "name": "Kenny Chesney"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 1,
+            "name": "Concert"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 64010,
+            "name": "Artists H - K"
+          }
+        ],
+        "performers": [
+          {
+            "id": 5227,
+            "name": "Kenny Chesney"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 1,
+            "name": "Concert"
+          },
+          {
+            "id": 195487,
+            "name": "Country and Folk Music"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 994.5,
+        "minListPrice": 800,
+        "maxListPrice": 5000,
+        "totalTickets": 36,
+        "totalListings": 6
+      }
+    },
+    {
+      "id": 105033507,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "Passion Conference Tickets (January 2-3)",
+      "description": "Buy and sell Passion Conference Tickets for Jan 2 at Mercedes-Benz Stadium in Atlanta, GA at StubHub. Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "passion-conference-atlanta-tickets-1-2-2022/event/105033507/",
+      "eventDateLocal": "2022-01-02T18:00:00-0500",
+      "eventDateUTC": "2022-01-02T23:00:00+0000",
+      "createdDate": "2021-10-12T00:23:08+0000",
+      "lastUpdatedDate": "2021-10-12T00:34:04+0000",
+      "hideEventDate": true,
+      "hideEventTime": true,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1590507,
+        "venueConfigName": "General Admission Only",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EST",
+      "performers": [
+        {
+          "id": 1507325,
+          "name": "Passion Conference"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 174,
+            "name": "Theater and Arts"
+          },
+          {
+            "id": 194,
+            "name": "Speaking Tour / Convention"
+          }
+        ],
+        "groupings": [],
+        "performers": [
+          {
+            "id": 1507325,
+            "name": "Passion Conference"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 194,
+            "name": "Speaking Tour / Convention"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 141.38,
+        "minListPrice": 112,
+        "maxListPrice": 140,
+        "totalTickets": 8,
+        "totalListings": 7
+      }
+    },
+    {
+      "id": 104762783,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "VIP Virtual Tailgate with an Atlanta Falcons Legend",
+      "description": "Buy and sell VIP Virtual Tailgate Tickets for Dec 31 at Mercedes-Benz Stadium in Atlanta, GA at StubHub. Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "vip-virtual-tailgate-atlanta-tickets-12-31-2021/event/104762783/",
+      "eventDateLocal": "2021-12-31T19:00:00-0500",
+      "eventDateUTC": "2022-01-01T00:00:00+0000",
+      "createdDate": "2020-12-01T23:24:00+0000",
+      "lastUpdatedDate": "2020-12-10T15:09:37+0000",
+      "hideEventDate": true,
+      "hideEventTime": true,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1652347,
+        "venueConfigName": "Virtual NFL Tailgate",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EST",
+      "performers": [
+        {
+          "id": 6044,
+          "name": "Atlanta Falcons",
+          "role": "TBD"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 28,
+            "name": "Sports"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 50696502,
+            "name": "VIP Virtual Tailgate"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 28,
+            "name": "Sports"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 0,
+        "minListPrice": 0,
+        "maxListPrice": 0,
+        "totalTickets": 0,
+        "totalListings": 0
+      }
+    },
+    {
+      "id": 104971542,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "Elton John VIP Packages",
+      "description": "Buy and sell Elton John Atlanta Tickets for September 22 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "elton-john-atlanta-tickets-9-22-2022/event/104971542/",
+      "eventDateLocal": "2022-09-22T19:59:00-0400",
+      "eventDateUTC": "2022-09-22T23:59:00+0000",
+      "createdDate": "2021-08-28T15:51:44+0000",
+      "lastUpdatedDate": "2021-09-07T13:10:39+0000",
+      "hideEventDate": false,
+      "hideEventTime": false,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1773926,
+        "venueConfigName": "Elton John VIP - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EDT",
+      "performers": [
+        {
+          "id": 43088,
+          "name": "Elton John"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 1,
+            "name": "Concert"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 63911,
+            "name": "Artists D - G"
+          }
+        ],
+        "performers": [
+          {
+            "id": 43088,
+            "name": "Elton John"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 1,
+            "name": "Concert"
+          },
+          {
+            "id": 441193,
+            "name": "Rock, Pop and Hip-Hop"
+          },
+          {
+            "id": 195743,
+            "name": "Pop Music"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 1862.5,
+        "minListPrice": 1500,
+        "maxListPrice": 7500,
+        "totalTickets": 16,
+        "totalListings": 4
+      }
+    },
+    {
+      "id": 104884542,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "Elton John",
+      "description": "Buy and sell Elton John Atlanta Tickets for September 22 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "elton-john-atlanta-tickets-9-22-2022/event/104884542/",
+      "eventDateLocal": "2022-09-22T20:00:00-0400",
+      "eventDateUTC": "2022-09-23T00:00:00+0000",
+      "createdDate": "2021-06-23T15:40:05+0000",
+      "lastUpdatedDate": "2021-06-23T15:40:06+0000",
+      "hideEventDate": false,
+      "hideEventTime": false,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1247904,
+        "venueConfigName": "Elton John 2022 - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EDT",
+      "performers": [
+        {
+          "id": 43088,
+          "name": "Elton John"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 1,
+            "name": "Concert"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 63911,
+            "name": "Artists D - G"
+          }
+        ],
+        "performers": [
+          {
+            "id": 43088,
+            "name": "Elton John"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 1,
+            "name": "Concert"
+          },
+          {
+            "id": 441193,
+            "name": "Rock, Pop and Hip-Hop"
+          },
+          {
+            "id": 195743,
+            "name": "Pop Music"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 137.36,
+        "minListPrice": 104.93,
+        "maxListPrice": 10000,
+        "totalTickets": 4838,
+        "totalListings": 1254
+      }
+    },
+    {
+      "id": 105006377,
+      "status": "Contingent",
+      "locale": "en_US",
+      "name": "TBD at Atlanta United FC: Eastern Conference Finals Tickets (If Necessary)",
+      "description": "Buy and sell TBD vs Atlanta United FC Eastern Conference Finals Tickets for Dec 4 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "atlanta-united-fc-atlanta-tickets-12-4-2021/event/105006377/",
+      "eventDateLocal": "2021-12-04T13:00:00-0500",
+      "eventDateUTC": "2021-12-04T18:00:00+0000",
+      "createdDate": "2021-09-21T20:01:04+0000",
+      "lastUpdatedDate": "2021-10-13T17:26:14+0000",
+      "hideEventDate": true,
+      "hideEventTime": true,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1243904,
+        "venueConfigName": "Soccer - Atlanta FC - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EST",
+      "performers": [
+        {
+          "id": 1515465,
+          "name": "Atlanta United FC"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 28,
+            "name": "Sports"
+          },
+          {
+            "id": 114,
+            "name": "Soccer"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 142,
+            "name": "MLS"
+          },
+          {
+            "id": 383238,
+            "name": "MLS Playoff"
+          },
+          {
+            "id": 50004223,
+            "name": "Atlanta United FC Playoff"
+          }
+        ],
+        "performers": [
+          {
+            "id": 1515465,
+            "name": "Atlanta United FC"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 114,
+            "name": "Soccer"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 195.94,
+        "minListPrice": 156,
+        "maxListPrice": 650,
+        "totalTickets": 29,
+        "totalListings": 11
+      }
+    },
+    {
+      "id": 104356055,
+      "status": "Active",
+      "locale": "en_US",
+      "name": "Kenny Chesney Tickets (Rescheduled from May 16, 2020 and May 22, 2021)",
+      "description": "Buy and sell Kenny Chesney Atlanta Tickets for May 21 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+      "webURI": "kenny-chesney-atlanta-tickets-5-21-2022/event/104356055/",
+      "eventDateLocal": "2022-05-21T17:00:00-0400",
+      "eventDateUTC": "2022-05-21T21:00:00+0000",
+      "createdDate": "2019-09-24T16:29:10+0000",
+      "lastUpdatedDate": "2021-06-17T18:39:52+0000",
+      "hideEventDate": false,
+      "hideEventTime": false,
+      "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1250495,
+        "venueConfigName": "Kenny Chesney 2020 - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+      },
+      "timezone": "EDT",
+      "performers": [
+        {
+          "id": 5227,
+          "name": "Kenny Chesney"
+        }
+      ],
+      "ancestors": {
+        "categories": [
+          {
+            "id": 1,
+            "name": "Concert"
+          }
+        ],
+        "groupings": [
+          {
+            "id": 64010,
+            "name": "Artists H - K"
+          }
+        ],
+        "performers": [
+          {
+            "id": 5227,
+            "name": "Kenny Chesney"
+          }
+        ]
+      },
+      "categoriesCollection": {
+        "categories": [
+          {
+            "id": 1,
+            "name": "Concert"
+          },
+          {
+            "id": 195487,
+            "name": "Country and Folk Music"
+          }
+        ]
+      },
+      "currencyCode": "USD",
+      "ticketInfo": {
+        "minPrice": 52.1,
+        "minListPrice": 40,
+        "maxListPrice": 5175,
+        "totalTickets": 2222,
+        "totalListings": 454
+      }
+    }
+  ]
+}

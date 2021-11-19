@@ -1,0 +1,24 @@
+{
+    "numFound": 1,
+    "performers": [
+        {
+            "id": 6044,
+            "name": "Atlanta Falcons",
+            "webURI": "atlanta-falcons-tickets/performer/6044/",
+            "status": "Active",
+            "eventCount": 6,
+            "ancestors": {
+                "categories": [
+                    {
+                        "id": 28,
+                        "name": "Sports"
+                    },
+                    {
+                        "id": 31,
+                        "name": "Football"
+                    }
+                ]
+            }
+        }
+    ]
+}

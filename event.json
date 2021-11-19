@@ -1,0 +1,82 @@
+{
+    "id": 104827526,
+    "status": "Active",
+    "locale": "en_US",
+    "name": "New Orleans Saints at Atlanta Falcons",
+    "description": "Buy and sell New Orleans vs Atlanta Mercedes-Benz Stadium tickets for January 9 at Mercedes-Benz Stadium in Atlanta, GA at StubHub! Tickets are 100% guaranteed by FanProtect.",
+    "webURI": "atlanta-falcons-atlanta-tickets-1-9-2022/event/104827526/",
+    "eventDateLocal": "2022-01-09T13:00:00-0500",
+    "eventDateUTC": "2022-01-09T18:00:00+0000",
+    "createdDate": "2021-04-20T04:30:12+0000",
+    "lastUpdatedDate": "2021-08-21T19:42:01+0000",
+    "hideEventDate": false,
+    "hideEventTime": false,
+    "venue": {
+        "id": 448258,
+        "name": "Mercedes-Benz Stadium",
+        "city": "Atlanta",
+        "state": "GA",
+        "postalCode": "30313",
+        "country": "US",
+        "venueConfigId": 1243361,
+        "venueConfigName": "Football - Falcons - Dynamic",
+        "latitude": 33.75501,
+        "longitude": -84.40186
+    },
+    "timezone": "EST",
+    "performers": [
+        {
+            "id": 6044,
+            "name": "Atlanta Falcons"
+        },
+        {
+            "id": 6065,
+            "name": "New Orleans Saints",
+            "role": "AWAY_TEAM"
+        }
+    ],
+    "ancestors": {
+        "categories": [
+            {
+                "id": 28,
+                "name": "Sports"
+            },
+            {
+                "id": 31,
+                "name": "Football"
+            }
+        ],
+        "groupings": [
+            {
+                "id": 121,
+                "name": "NFL"
+            },
+            {
+                "id": 80916,
+                "name": "Regular Season NFL"
+            }
+        ],
+        "performers": [
+            {
+                "id": 6044,
+                "name": "Atlanta Falcons"
+            }
+        ]
+    },
+    "categoriesCollection": {
+        "categories": [
+            {
+                "id": 31,
+                "name": "Football"
+            }
+        ]
+    },
+    "currencyCode": "USD",
+    "ticketInfo": {
+        "minPrice": 71.71,
+        "minListPrice": 55,
+        "maxListPrice": 4656.85,
+        "totalTickets": 3453,
+        "totalListings": 976
+    }
+}

@@ -21,14 +21,17 @@ basic_authorization_token = base64.b64encode(
 data = json.dumps({
     "username": username,
     "password": password
-})
+    })
 
 headers = {
-  'Authorization': 'Basic ' + basic_authorization_token.decode('UTF-8'),
-  'Content-Type': 'application/json',
-}
+        'Authorization': 'Basic ' + basic_authorization_token.decode('UTF-8'),
+        'Content-Type': 'application/json',
+        }
 
 response = requests.request("POST", url, headers=headers, data=data)
 response = json.loads(response.text)
 
-print(response['access_token'])
+print(json.dumps({
+    "basic_authorization_token": basic_authorization_token.decode('UTF-8'),
+    "access_token": response['access_token']
+    }))

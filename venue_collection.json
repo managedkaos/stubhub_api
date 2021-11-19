@@ -1,0 +1,20 @@
+{
+    "numFound": 1,
+    "venues": [
+        {
+            "id": 448258,
+            "name": "Mercedes-Benz Stadium",
+            "webURI": "mercedes-benz-stadium-tickets/venue/448258/",
+            "status": "Active",
+            "timezone": "EST",
+            "address": {
+                "address1": "441 M.L.K. Jr Dr NW",
+                "city": "Atlanta",
+                "state": "GA",
+                "country": "US",
+                "postalCode": "30313"
+            },
+            "eventCount": 16
+        }
+    ]
+}

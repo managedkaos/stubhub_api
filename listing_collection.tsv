@@ -1,0 +1,36 @@
+Parameter	Type	Description
+eventId	integer	StubHub Event ID
+totalListings	integer	Total number of listings that matched the given search criteria
+totalTickets	integer	Total number of tickets that matched the given search criteria
+minQuantity	integer	Minimum number of tickets in a listing across all the listings that matched the search criteria.
+maxQuantity	integer	Maximum number of tickets in a listing across all the listings that matched the search criteria
+numFound	integer	Number of listings found
+start	integer	start row of the cursor into the paginated set of response records. If start variable is not provided then it defaults to 0
+rows	integer	Represents the number of rows of listings that need to be returned starting from starting index provided in the start parameter. If this parameter is not provided in the request, then a default value of 250 will be used
+listings	array
+listings.listingId	integer	The unique StubHub listing ID for the listing
+listings.pricePerProduct	money	The PricePerTicket is the seller's current asking price for a single ticket.
+listings.pricePerProduct.amount	number	Amount
+listings.pricePerProduct.currency	string	Currency
+listings.isGA	integer	General Admission indicator. 1 indicates General Admission event
+listings.row	string	Description of the row provided by seller for the listing. This can also be null if it is not provided by the seller.
+listings.quantity	integer	Quantity of tickets remaining in the listing.
+listings.products	array	Product array with the row & seat information. Only returned if seller provided seat numbers for the listing
+listings.products.row	string	Row associated with the ticket
+listings.products.seat	string	Seat number associated with the ticket
+listings.sellerSectionName	string	Section name for the listing entered by the seller
+listings.sectionName	string	Section name of the listing, provided by seller. If seller provides an invalid section name (typo or mistake), we scrub it to a real section name. Always use this field for display of section name and ignore the seller section name
+listings.sectionId	integer	StubHub unique identifier for the section
+listings.isSectionMapped	boolean	Indicates whether the listing's section is mapped to a valid section on the seat map
+listings.zone	string	The zone name of the zone to which the listing belongs. Can be null if the listing cannot be mapped to any section or zone
+listings.zoneId	integer	StubHub unique identifier for the zone
+listings.splitOption	splitOptionType	Indicator that allows sellers to choose different ways to split the quantity while selling the listing to the buyer. Possible values are NONE, NOSINGLES, MULTIPLES.  NONE: Sell the entire listing as a whole lot. All of the tickets in the listing must be purchased in a single transaction NOSINGLES: Allow the listing to be purchased in any quantity that does not leave a single ticket. For example, if there are four tickets in the listing, a customer may buy one, two, or all four, but not three.  MULTIPLES: The tickets may only be purchased in multiples of the value given by the splitQuantity parameter.
+listings.splitQuantity	string	Split quantity that seller wants the listing to be split into while selling. When a value is specified in splitQuantity and splitOption is MULTIPLES, the tickets are sold in multiples of splitQuantity. For example, if listing has 12 tickets and splitOption is MULTIPLES and splitQuantity is 4, the tickets must be sold in batches of 4, 8, or 12. Only applicable if splitOption is set to MULTIPLES
+listings.buyQuantityOptions	array	This represents the different quantities in which the listing can be sold based on the splitOption and splitQuantity provided by the seller.
+listings.sellerOwnInd	integer	Indicator indicating if the listing belongs to the seller associated with the access token.  1 = belongs to current logged in user 0 = belongs to another customer
+listings.deliveryTypeList	array	List of delivery types applicable to the listing. Below is a mapping of the delivery type IDs returned in this field with the delivery types Electronic (=1) Electronic Instant Download (=2) FedEx (=3) Pickup (=4) UPS (=5) Royal Mail (=6) Deutsche Post (=7) MobileId (=8) Mobile Ticket (=9) External Transfer (=10) Courier (=11) Mobile Ticket Instant (=12) MobileId Non Instant (=13) Electronic and Mobile Ticket (=14) Electronic and Mobile Ticket Instant (=15) LocalDelivery (=16)
+listings.listingAttributeList	array	List of listing attributes applicable to this listing.
+listings.listingAttributeCategoryList	array	List of listing attribute categories applicable to this listing.
+listings.facevalue	object	The PricePerTicket is the seller's current asking price for a single ticket.
+listings.facevalue.amount	number	Amount
+listings.facevalue.currency	string	Currency

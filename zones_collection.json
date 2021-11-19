@@ -1,0 +1,1450 @@
+{
+    "zones": [
+        {
+            "id": 268832,
+            "name": "100 Level Suites",
+            "sections": [
+                {
+                    "id": 1986574,
+                    "name": "Suite 101"
+                },
+                {
+                    "id": 1986472,
+                    "name": "Suite 102"
+                },
+                {
+                    "id": 1986632,
+                    "name": "Suite 103"
+                },
+                {
+                    "id": 1986580,
+                    "name": "Suite 104"
+                },
+                {
+                    "id": 1986606,
+                    "name": "Suite 105"
+                },
+                {
+                    "id": 1986538,
+                    "name": "Suite 106"
+                },
+                {
+                    "id": 1986589,
+                    "name": "Suite 107"
+                },
+                {
+                    "id": 1986610,
+                    "name": "Suite 108"
+                },
+                {
+                    "id": 1986603,
+                    "name": "Suite 109"
+                },
+                {
+                    "id": 1986479,
+                    "name": "Suite 110"
+                },
+                {
+                    "id": 1986629,
+                    "name": "Suite 111"
+                },
+                {
+                    "id": 1986537,
+                    "name": "Suite 123"
+                },
+                {
+                    "id": 1986569,
+                    "name": "Suite 124"
+                },
+                {
+                    "id": 1986498,
+                    "name": "Suite 125"
+                },
+                {
+                    "id": 1986470,
+                    "name": "Suite 126"
+                },
+                {
+                    "id": 1986587,
+                    "name": "Suite 127"
+                },
+                {
+                    "id": 1986475,
+                    "name": "Suite 128"
+                },
+                {
+                    "id": 1986608,
+                    "name": "Suite 129"
+                },
+                {
+                    "id": 1986508,
+                    "name": "Suite 130"
+                },
+                {
+                    "id": 1986504,
+                    "name": "Suite 131"
+                },
+                {
+                    "id": 1986497,
+                    "name": "Suite 132"
+                },
+                {
+                    "id": 1986558,
+                    "name": "Suite 133"
+                },
+                {
+                    "id": 1986634,
+                    "name": "Suite 134"
+                },
+                {
+                    "id": 1986592,
+                    "name": "Suite 135"
+                },
+                {
+                    "id": 1986588,
+                    "name": "Suite 136"
+                },
+                {
+                    "id": 1986557,
+                    "name": "Suite 137"
+                },
+                {
+                    "id": 1986615,
+                    "name": "Suite 138"
+                },
+                {
+                    "id": 1986631,
+                    "name": "Suite 139"
+                },
+                {
+                    "id": 1986476,
+                    "name": "Suite 140"
+                },
+                {
+                    "id": 1986530,
+                    "name": "Suite 141"
+                },
+                {
+                    "id": 1986576,
+                    "name": "Suite 142"
+                },
+                {
+                    "id": 1986533,
+                    "name": "Suite 143"
+                },
+                {
+                    "id": 1986625,
+                    "name": "Suite 144"
+                },
+                {
+                    "id": 1986605,
+                    "name": "Suite 145"
+                },
+                {
+                    "id": 1986623,
+                    "name": "Suite 146"
+                },
+                {
+                    "id": 1986506,
+                    "name": "Suite 147"
+                },
+                {
+                    "id": 1986546,
+                    "name": "Suite 148"
+                },
+                {
+                    "id": 1986621,
+                    "name": "Suite 149"
+                },
+                {
+                    "id": 1986595,
+                    "name": "Suite 150"
+                },
+                {
+                    "id": 1986495,
+                    "name": "Suite 151"
+                },
+                {
+                    "id": 1986483,
+                    "name": "Suite 152"
+                },
+                {
+                    "id": 1986552,
+                    "name": "Suite 153"
+                },
+                {
+                    "id": 1986528,
+                    "name": "Suite 154"
+                },
+                {
+                    "id": 1986579,
+                    "name": "Suite 155"
+                },
+                {
+                    "id": 1986512,
+                    "name": "Suite 156"
+                },
+                {
+                    "id": 1986474,
+                    "name": "Suite 157"
+                },
+                {
+                    "id": 1986568,
+                    "name": "Suite 158"
+                },
+                {
+                    "id": 1986548,
+                    "name": "Suite 159"
+                },
+                {
+                    "id": 1986471,
+                    "name": "Suite 160"
+                },
+                {
+                    "id": 1986620,
+                    "name": "Suite 161"
+                },
+                {
+                    "id": 1986591,
+                    "name": "Suite 162"
+                },
+                {
+                    "id": 1986511,
+                    "name": "Suite 163"
+                },
+                {
+                    "id": 1986509,
+                    "name": "Suite 164"
+                },
+                {
+                    "id": 1986507,
+                    "name": "Suite 165"
+                },
+                {
+                    "id": 1986553,
+                    "name": "Suite 166"
+                },
+                {
+                    "id": 1986505,
+                    "name": "Suite 167"
+                },
+                {
+                    "id": 1986489,
+                    "name": "Suite 168"
+                },
+                {
+                    "id": 1986583,
+                    "name": "Suite 169"
+                },
+                {
+                    "id": 1986601,
+                    "name": "Suite 170"
+                },
+                {
+                    "id": 1986560,
+                    "name": "Suite 171"
+                },
+                {
+                    "id": 1986550,
+                    "name": "Suite 172"
+                },
+                {
+                    "id": 1986551,
+                    "name": "Suite 173"
+                },
+                {
+                    "id": 1986488,
+                    "name": "Suite 174"
+                },
+                {
+                    "id": 1986593,
+                    "name": "Suite 175"
+                },
+                {
+                    "id": 1986628,
+                    "name": "Suite 176"
+                },
+                {
+                    "id": 1986502,
+                    "name": "Suite 177"
+                },
+                {
+                    "id": 1986590,
+                    "name": "Suite 178"
+                },
+                {
+                    "id": 1986547,
+                    "name": "Suite 179"
+                },
+                {
+                    "id": 1986602,
+                    "name": "Suite 180"
+                },
+                {
+                    "id": 1986581,
+                    "name": "Suite 182"
+                },
+                {
+                    "id": 1986531,
+                    "name": "Suite 183"
+                },
+                {
+                    "id": 1986542,
+                    "name": "Suite 184"
+                },
+                {
+                    "id": 1986577,
+                    "name": "Suite 185"
+                },
+                {
+                    "id": 1986585,
+                    "name": "Suite 186"
+                },
+                {
+                    "id": 1986519,
+                    "name": "Suite 187"
+                },
+                {
+                    "id": 1986520,
+                    "name": "Suite 188"
+                },
+                {
+                    "id": 1986624,
+                    "name": "Suite 189"
+                },
+                {
+                    "id": 1986582,
+                    "name": "Suite 190"
+                },
+                {
+                    "id": 1986503,
+                    "name": "Suite 191"
+                },
+                {
+                    "id": 1986516,
+                    "name": "Suite 192"
+                },
+                {
+                    "id": 1986563,
+                    "name": "Suite 193"
+                },
+                {
+                    "id": 1986599,
+                    "name": "Suite 194"
+                },
+                {
+                    "id": 1986541,
+                    "name": "Suite 195"
+                },
+                {
+                    "id": 1986562,
+                    "name": "Suite 196"
+                },
+                {
+                    "id": 1986484,
+                    "name": "Suite 197"
+                }
+            ]
+        },
+        {
+            "id": 268833,
+            "name": "200 Level Suites",
+            "sections": [
+                {
+                    "id": 1986524,
+                    "name": "Suite 201"
+                },
+                {
+                    "id": 1986622,
+                    "name": "Suite 202"
+                },
+                {
+                    "id": 1986554,
+                    "name": "Suite 203"
+                },
+                {
+                    "id": 1986485,
+                    "name": "Suite 204"
+                },
+                {
+                    "id": 1986584,
+                    "name": "Suite 205"
+                },
+                {
+                    "id": 1986523,
+                    "name": "Suite 206"
+                },
+                {
+                    "id": 1986529,
+                    "name": "Suite 207"
+                },
+                {
+                    "id": 1986486,
+                    "name": "Suite 208"
+                },
+                {
+                    "id": 1986594,
+                    "name": "Suite 209"
+                },
+                {
+                    "id": 1986578,
+                    "name": "Suite 210"
+                },
+                {
+                    "id": 1986482,
+                    "name": "Suite 211"
+                },
+                {
+                    "id": 1986597,
+                    "name": "Suite 212"
+                },
+                {
+                    "id": 1986566,
+                    "name": "Suite 213"
+                },
+                {
+                    "id": 1986607,
+                    "name": "Suite 214"
+                },
+                {
+                    "id": 1986493,
+                    "name": "Suite 215"
+                },
+                {
+                    "id": 1986510,
+                    "name": "Suite 216"
+                },
+                {
+                    "id": 1986565,
+                    "name": "Suite 217"
+                },
+                {
+                    "id": 1986611,
+                    "name": "Suite 218"
+                },
+                {
+                    "id": 1986570,
+                    "name": "Suite 219"
+                },
+                {
+                    "id": 1986515,
+                    "name": "Suite 220"
+                },
+                {
+                    "id": 1986492,
+                    "name": "Suite 221"
+                },
+                {
+                    "id": 1986478,
+                    "name": "Suite 222"
+                },
+                {
+                    "id": 1986556,
+                    "name": "Suite 223"
+                },
+                {
+                    "id": 1986469,
+                    "name": "Suite 224"
+                },
+                {
+                    "id": 1986527,
+                    "name": "Suite 225"
+                },
+                {
+                    "id": 1986543,
+                    "name": "Suite 226"
+                },
+                {
+                    "id": 1986600,
+                    "name": "Suite 227"
+                },
+                {
+                    "id": 1986500,
+                    "name": "Suite 228"
+                },
+                {
+                    "id": 1986545,
+                    "name": "Suite 229"
+                },
+                {
+                    "id": 1986549,
+                    "name": "Suite 230"
+                },
+                {
+                    "id": 1986567,
+                    "name": "Suite 231"
+                },
+                {
+                    "id": 1986561,
+                    "name": "Suite 232"
+                },
+                {
+                    "id": 1986491,
+                    "name": "Suite 233"
+                },
+                {
+                    "id": 1986481,
+                    "name": "Suite 234"
+                },
+                {
+                    "id": 1986630,
+                    "name": "Suite 235"
+                },
+                {
+                    "id": 1986544,
+                    "name": "Suite 236"
+                },
+                {
+                    "id": 1986535,
+                    "name": "Suite 237"
+                },
+                {
+                    "id": 1986564,
+                    "name": "Suite 276"
+                },
+                {
+                    "id": 1986613,
+                    "name": "Suite 277"
+                },
+                {
+                    "id": 1986575,
+                    "name": "Suite 278"
+                },
+                {
+                    "id": 1986480,
+                    "name": "Suite 279"
+                },
+                {
+                    "id": 1986499,
+                    "name": "Suite 280"
+                },
+                {
+                    "id": 1986496,
+                    "name": "Suite 281"
+                },
+                {
+                    "id": 1986536,
+                    "name": "Suite 282"
+                },
+                {
+                    "id": 1986604,
+                    "name": "Suite 283"
+                },
+                {
+                    "id": 1986525,
+                    "name": "Suite 284"
+                },
+                {
+                    "id": 1986586,
+                    "name": "Suite 285"
+                },
+                {
+                    "id": 1986539,
+                    "name": "Suite 286"
+                },
+                {
+                    "id": 1986514,
+                    "name": "Suite 287"
+                },
+                {
+                    "id": 1986627,
+                    "name": "Suite 288"
+                },
+                {
+                    "id": 1986473,
+                    "name": "Suite 289"
+                },
+                {
+                    "id": 1986534,
+                    "name": "Suite 290"
+                },
+                {
+                    "id": 1986633,
+                    "name": "Suite 291"
+                },
+                {
+                    "id": 1986598,
+                    "name": "Suite 292"
+                },
+                {
+                    "id": 1986612,
+                    "name": "Suite 293"
+                },
+                {
+                    "id": 1986616,
+                    "name": "Suite 294"
+                },
+                {
+                    "id": 1986513,
+                    "name": "Suite 295"
+                },
+                {
+                    "id": 1986572,
+                    "name": "Suite 296"
+                },
+                {
+                    "id": 1986490,
+                    "name": "Suite 297"
+                }
+            ]
+        },
+        {
+            "id": 266042,
+            "name": "AMG Lounge",
+            "sections": [
+                {
+                    "id": 1942896,
+                    "name": "AMG Lounge Club 110"
+                }
+            ]
+        },
+        {
+            "id": 268838,
+            "name": "Floor",
+            "sections": [
+                {
+                    "id": 1987465,
+                    "name": "Floor 1"
+                },
+                {
+                    "id": 1987470,
+                    "name": "Floor 10"
+                },
+                {
+                    "id": 1987472,
+                    "name": "Floor 11"
+                },
+                {
+                    "id": 1987458,
+                    "name": "Floor 12"
+                },
+                {
+                    "id": 1987468,
+                    "name": "Floor 13"
+                },
+                {
+                    "id": 1987463,
+                    "name": "Floor 14"
+                },
+                {
+                    "id": 1987476,
+                    "name": "Floor 15"
+                },
+                {
+                    "id": 1987473,
+                    "name": "Floor 16"
+                },
+                {
+                    "id": 1987461,
+                    "name": "Floor 2"
+                },
+                {
+                    "id": 1987479,
+                    "name": "Floor 3"
+                },
+                {
+                    "id": 1987471,
+                    "name": "Floor 4"
+                },
+                {
+                    "id": 1987460,
+                    "name": "Floor 5"
+                },
+                {
+                    "id": 1987483,
+                    "name": "Floor 6"
+                },
+                {
+                    "id": 1987469,
+                    "name": "Floor 7"
+                },
+                {
+                    "id": 1987459,
+                    "name": "Floor 8"
+                },
+                {
+                    "id": 1987466,
+                    "name": "Floor 9"
+                }
+            ]
+        },
+        {
+            "id": 270919,
+            "name": "Loge Box",
+            "sections": [
+                {
+                    "id": 2009463,
+                    "name": "Loge Box 106"
+                },
+                {
+                    "id": 2009468,
+                    "name": "Loge Box 114"
+                },
+                {
+                    "id": 2009452,
+                    "name": "Loge Box 124"
+                },
+                {
+                    "id": 2009457,
+                    "name": "Loge Box 132"
+                }
+            ]
+        },
+        {
+            "id": 264424,
+            "name": "Lower Club Midfield",
+            "sections": [
+                {
+                    "id": 1942872,
+                    "name": "Lower Club Midfield 108"
+                },
+                {
+                    "id": 1942945,
+                    "name": "Lower Club Midfield 109"
+                },
+                {
+                    "id": 1942978,
+                    "name": "Lower Club Midfield 111"
+                },
+                {
+                    "id": 1942871,
+                    "name": "Lower Club Midfield 112"
+                },
+                {
+                    "id": 1942897,
+                    "name": "Lower Club Midfield 126"
+                },
+                {
+                    "id": 1942881,
+                    "name": "Lower Club Midfield 127"
+                },
+                {
+                    "id": 1942875,
+                    "name": "Lower Club Midfield 129"
+                },
+                {
+                    "id": 1942862,
+                    "name": "Lower Club Midfield 130"
+                }
+            ]
+        },
+        {
+            "id": 264425,
+            "name": "Lower Corner",
+            "sections": [
+                {
+                    "id": 1942889,
+                    "name": "General Admission Area for Falcons Fans Only - No Visiting Team fans allowed"
+                },
+                {
+                    "id": 1942934,
+                    "name": "Lower Corner 104"
+                },
+                {
+                    "id": 1942925,
+                    "name": "Lower Corner 105"
+                },
+                {
+                    "id": 1942973,
+                    "name": "Lower Corner 115"
+                },
+                {
+                    "id": 1942901,
+                    "name": "Lower Corner 116"
+                },
+                {
+                    "id": 1942982,
+                    "name": "Lower Corner 122"
+                },
+                {
+                    "id": 1942940,
+                    "name": "Lower Corner 123"
+                },
+                {
+                    "id": 1942906,
+                    "name": "Lower Corner 133"
+                }
+            ]
+        },
+        {
+            "id": 264426,
+            "name": "Lower Endzone",
+            "sections": [
+                {
+                    "id": 1942898,
+                    "name": "Lower Endzone 101"
+                },
+                {
+                    "id": 1942917,
+                    "name": "Lower Endzone 102"
+                },
+                {
+                    "id": 1942915,
+                    "name": "Lower Endzone 103"
+                },
+                {
+                    "id": 1942961,
+                    "name": "Lower Endzone 117"
+                },
+                {
+                    "id": 1942930,
+                    "name": "Lower Endzone 118"
+                },
+                {
+                    "id": 1942950,
+                    "name": "Lower Endzone 119"
+                },
+                {
+                    "id": 1942979,
+                    "name": "Lower Endzone 120"
+                },
+                {
+                    "id": 1942972,
+                    "name": "Lower Endzone 121"
+                },
+                {
+                    "id": 1942959,
+                    "name": "Lower Endzone 135"
+                },
+                {
+                    "id": 1942937,
+                    "name": "Lower Endzone 136"
+                }
+            ]
+        },
+        {
+            "id": 264427,
+            "name": "Lower Sideline",
+            "sections": [
+                {
+                    "id": 1942969,
+                    "name": "Lower Sideline 106"
+                },
+                {
+                    "id": 1942878,
+                    "name": "Lower Sideline 107"
+                },
+                {
+                    "id": 1942922,
+                    "name": "Lower Sideline 113"
+                },
+                {
+                    "id": 1942964,
+                    "name": "Lower Sideline 114"
+                },
+                {
+                    "id": 1942986,
+                    "name": "Lower Sideline 124"
+                },
+                {
+                    "id": 1942960,
+                    "name": "Lower Sideline 125"
+                },
+                {
+                    "id": 1942981,
+                    "name": "Lower Sideline 131"
+                },
+                {
+                    "id": 1942899,
+                    "name": "Lower Sideline 132"
+                }
+            ]
+        },
+        {
+            "id": 264428,
+            "name": "Mezzanine Club Sideline",
+            "sections": [
+                {
+                    "id": 1942880,
+                    "name": "Mezzanine Club Sideline 210"
+                },
+                {
+                    "id": 1942873,
+                    "name": "Mezzanine Club Sideline 211"
+                },
+                {
+                    "id": 1942920,
+                    "name": "Mezzanine Club Sideline 212"
+                },
+                {
+                    "id": 1942902,
+                    "name": "Mezzanine Club Sideline 236"
+                },
+                {
+                    "id": 1942987,
+                    "name": "Mezzanine Club Sideline 237"
+                },
+                {
+                    "id": 1942860,
+                    "name": "Mezzanine Club Sideline 238"
+                }
+            ]
+        },
+        {
+            "id": 264429,
+            "name": "Mezzanine Corner",
+            "sections": [
+                {
+                    "id": 1942916,
+                    "name": "Mezzanine Corner 201"
+                },
+                {
+                    "id": 1942891,
+                    "name": "Mezzanine Corner 202"
+                },
+                {
+                    "id": 1942909,
+                    "name": "Mezzanine Corner 203"
+                },
+                {
+                    "id": 1942951,
+                    "name": "Mezzanine Corner 204"
+                },
+                {
+                    "id": 1942985,
+                    "name": "Mezzanine Corner 205"
+                },
+                {
+                    "id": 1942953,
+                    "name": "Mezzanine Corner 217"
+                },
+                {
+                    "id": 1942948,
+                    "name": "Mezzanine Corner 218"
+                },
+                {
+                    "id": 1942883,
+                    "name": "Mezzanine Corner 219"
+                },
+                {
+                    "id": 1942905,
+                    "name": "Mezzanine Corner 220"
+                },
+                {
+                    "id": 1942863,
+                    "name": "Mezzanine Corner 221"
+                },
+                {
+                    "id": 1942921,
+                    "name": "Mezzanine Corner 227"
+                },
+                {
+                    "id": 1942946,
+                    "name": "Mezzanine Corner 228"
+                },
+                {
+                    "id": 1942941,
+                    "name": "Mezzanine Corner 229"
+                },
+                {
+                    "id": 1942966,
+                    "name": "Mezzanine Corner 230"
+                },
+                {
+                    "id": 1942988,
+                    "name": "Mezzanine Corner 231"
+                },
+                {
+                    "id": 1942970,
+                    "name": "Mezzanine Corner 243"
+                },
+                {
+                    "id": 1942936,
+                    "name": "Mezzanine Corner 244"
+                },
+                {
+                    "id": 1942975,
+                    "name": "Mezzanine Corner 245"
+                },
+                {
+                    "id": 1942868,
+                    "name": "Mezzanine Corner 246"
+                },
+                {
+                    "id": 1942870,
+                    "name": "Mezzanine Corner 247"
+                }
+            ]
+        },
+        {
+            "id": 264430,
+            "name": "Mezzanine Endzone",
+            "sections": [
+                {
+                    "id": 1942894,
+                    "name": "Mezzanine Endzone 222"
+                },
+                {
+                    "id": 1942865,
+                    "name": "Mezzanine Endzone 223"
+                },
+                {
+                    "id": 1942884,
+                    "name": "Mezzanine Endzone 224"
+                },
+                {
+                    "id": 1942949,
+                    "name": "Mezzanine Endzone 225"
+                },
+                {
+                    "id": 1942861,
+                    "name": "Mezzanine Endzone 226"
+                }
+            ]
+        },
+        {
+            "id": 264431,
+            "name": "Mezzanine Sideline",
+            "sections": [
+                {
+                    "id": 1942992,
+                    "name": "Mezzanine Sideline 206"
+                },
+                {
+                    "id": 1942968,
+                    "name": "Mezzanine Sideline 207"
+                },
+                {
+                    "id": 1942904,
+                    "name": "Mezzanine Sideline 208"
+                },
+                {
+                    "id": 1942911,
+                    "name": "Mezzanine Sideline 209"
+                },
+                {
+                    "id": 1942866,
+                    "name": "Mezzanine Sideline 213"
+                },
+                {
+                    "id": 1942927,
+                    "name": "Mezzanine Sideline 214"
+                },
+                {
+                    "id": 1942919,
+                    "name": "Mezzanine Sideline 215"
+                },
+                {
+                    "id": 1942874,
+                    "name": "Mezzanine Sideline 216"
+                },
+                {
+                    "id": 1942990,
+                    "name": "Mezzanine Sideline 232"
+                },
+                {
+                    "id": 1942932,
+                    "name": "Mezzanine Sideline 233"
+                },
+                {
+                    "id": 1942976,
+                    "name": "Mezzanine Sideline 234"
+                },
+                {
+                    "id": 1942980,
+                    "name": "Mezzanine Sideline 235"
+                },
+                {
+                    "id": 1942886,
+                    "name": "Mezzanine Sideline 239"
+                },
+                {
+                    "id": 1942885,
+                    "name": "Mezzanine Sideline 240"
+                },
+                {
+                    "id": 1942954,
+                    "name": "Mezzanine Sideline 241"
+                },
+                {
+                    "id": 1942892,
+                    "name": "Mezzanine Sideline 242"
+                }
+            ]
+        },
+        {
+            "id": 589655,
+            "name": "Molly Bs",
+            "sections": [
+                {
+                    "id": 3062472,
+                    "name": "Molly B's Cookhouse"
+                }
+            ]
+        },
+        {
+            "id": 298869,
+            "name": "SRO",
+            "sections": [
+                {
+                    "id": 2177749,
+                    "name": "Standing Room Only"
+                }
+            ]
+        },
+        {
+            "id": 268839,
+            "name": "Suite C",
+            "sections": [
+                {
+                    "id": 1987480,
+                    "name": "Suite C 1"
+                },
+                {
+                    "id": 1987462,
+                    "name": "Suite C 10"
+                },
+                {
+                    "id": 1987477,
+                    "name": "Suite C 2"
+                },
+                {
+                    "id": 1987481,
+                    "name": "Suite C 3"
+                },
+                {
+                    "id": 1987482,
+                    "name": "Suite C 4"
+                },
+                {
+                    "id": 1987478,
+                    "name": "Suite C 5"
+                },
+                {
+                    "id": 1987475,
+                    "name": "Suite C 6"
+                },
+                {
+                    "id": 1987464,
+                    "name": "Suite C 7"
+                },
+                {
+                    "id": 1987474,
+                    "name": "Suite C 8"
+                },
+                {
+                    "id": 1987467,
+                    "name": "Suite C 9"
+                }
+            ]
+        },
+        {
+            "id": 268771,
+            "name": "Suite GS",
+            "sections": [
+                {
+                    "id": 1986571,
+                    "name": "Suite GS 10"
+                },
+                {
+                    "id": 1986518,
+                    "name": "Suite GS 11"
+                },
+                {
+                    "id": 1986494,
+                    "name": "Suite GS 12"
+                },
+                {
+                    "id": 1986609,
+                    "name": "Suite GS 13"
+                },
+                {
+                    "id": 1986522,
+                    "name": "Suite GS 14"
+                },
+                {
+                    "id": 1986526,
+                    "name": "Suite GS 15"
+                },
+                {
+                    "id": 1986626,
+                    "name": "Suite GS 16"
+                },
+                {
+                    "id": 1986532,
+                    "name": "Suite GS 17"
+                },
+                {
+                    "id": 1986573,
+                    "name": "Suite GS 18"
+                },
+                {
+                    "id": 1986555,
+                    "name": "Suite GS 19"
+                },
+                {
+                    "id": 1986617,
+                    "name": "Suite GS 20"
+                },
+                {
+                    "id": 1986559,
+                    "name": "Suite GS 21"
+                },
+                {
+                    "id": 1986501,
+                    "name": "Suite GS 22"
+                },
+                {
+                    "id": 1986619,
+                    "name": "Suite GS 23"
+                },
+                {
+                    "id": 1986517,
+                    "name": "Suite GS 24"
+                },
+                {
+                    "id": 1986540,
+                    "name": "Suite GS 25"
+                },
+                {
+                    "id": 1986521,
+                    "name": "Suite GS 26"
+                },
+                {
+                    "id": 1986618,
+                    "name": "Suite GS 27"
+                },
+                {
+                    "id": 1986487,
+                    "name": "Suite GS 28"
+                },
+                {
+                    "id": 1986596,
+                    "name": "Suite GS 29"
+                },
+                {
+                    "id": 1986614,
+                    "name": "Suite GS 30"
+                }
+            ]
+        },
+        {
+            "id": 266043,
+            "name": "SunTrust Club",
+            "sections": [
+                {
+                    "id": 1942910,
+                    "name": "SunTrust Club 128"
+                }
+            ]
+        },
+        {
+            "id": 264432,
+            "name": "Upper Corner",
+            "sections": [
+                {
+                    "id": 1942974,
+                    "name": "Upper Corner 301"
+                },
+                {
+                    "id": 1942931,
+                    "name": "Upper Corner 302"
+                },
+                {
+                    "id": 1942903,
+                    "name": "Upper Corner 303"
+                },
+                {
+                    "id": 1942942,
+                    "name": "Upper Corner 304"
+                },
+                {
+                    "id": 1942944,
+                    "name": "Upper Corner 305"
+                },
+                {
+                    "id": 1942900,
+                    "name": "Upper Corner 306"
+                },
+                {
+                    "id": 1942952,
+                    "name": "Upper Corner 307"
+                },
+                {
+                    "id": 1942893,
+                    "name": "Upper Corner 308"
+                },
+                {
+                    "id": 1942963,
+                    "name": "Upper Corner 315"
+                },
+                {
+                    "id": 1942877,
+                    "name": "Upper Corner 316"
+                },
+                {
+                    "id": 1942955,
+                    "name": "Upper Corner 317"
+                },
+                {
+                    "id": 1942907,
+                    "name": "Upper Corner 318"
+                },
+                {
+                    "id": 1942984,
+                    "name": "Upper Corner 319"
+                },
+                {
+                    "id": 1942977,
+                    "name": "Upper Corner 320"
+                },
+                {
+                    "id": 1942918,
+                    "name": "Upper Corner 321"
+                },
+                {
+                    "id": 1942943,
+                    "name": "Upper Corner 322"
+                },
+                {
+                    "id": 1942962,
+                    "name": "Upper Corner 329"
+                },
+                {
+                    "id": 1942869,
+                    "name": "Upper Corner 330"
+                },
+                {
+                    "id": 1942864,
+                    "name": "Upper Corner 331"
+                },
+                {
+                    "id": 1942867,
+                    "name": "Upper Corner 332"
+                },
+                {
+                    "id": 1942908,
+                    "name": "Upper Corner 333"
+                },
+                {
+                    "id": 1942914,
+                    "name": "Upper Corner 334"
+                },
+                {
+                    "id": 1942989,
+                    "name": "Upper Corner 335"
+                },
+                {
+                    "id": 1942933,
+                    "name": "Upper Corner 336"
+                },
+                {
+                    "id": 1942935,
+                    "name": "Upper Corner 343"
+                },
+                {
+                    "id": 1942895,
+                    "name": "Upper Corner 344"
+                },
+                {
+                    "id": 1942983,
+                    "name": "Upper Corner 345"
+                },
+                {
+                    "id": 1942924,
+                    "name": "Upper Corner 346"
+                },
+                {
+                    "id": 1942967,
+                    "name": "Upper Corner 347"
+                },
+                {
+                    "id": 1942929,
+                    "name": "Upper Corner 348"
+                },
+                {
+                    "id": 1942991,
+                    "name": "Upper Corner 349"
+                },
+                {
+                    "id": 1942947,
+                    "name": "Upper Corner 350"
+                }
+            ]
+        },
+        {
+            "id": 264433,
+            "name": "Upper Endzone",
+            "sections": [
+                {
+                    "id": 1942971,
+                    "name": "Upper Endzone 323"
+                },
+                {
+                    "id": 1942939,
+                    "name": "Upper Endzone 324"
+                },
+                {
+                    "id": 1942926,
+                    "name": "Upper Endzone 325"
+                },
+                {
+                    "id": 1942913,
+                    "name": "Upper Endzone 326"
+                },
+                {
+                    "id": 1942956,
+                    "name": "Upper Endzone 327"
+                },
+                {
+                    "id": 1942923,
+                    "name": "Upper Endzone 328"
+                }
+            ]
+        },
+        {
+            "id": 264434,
+            "name": "Upper Sideline",
+            "sections": [
+                {
+                    "id": 1942912,
+                    "name": "Upper Sideline 309"
+                },
+                {
+                    "id": 1942965,
+                    "name": "Upper Sideline 310"
+                },
+                {
+                    "id": 1942887,
+                    "name": "Upper Sideline 311"
+                },
+                {
+                    "id": 1942928,
+                    "name": "Upper Sideline 312"
+                },
+                {
+                    "id": 1942882,
+                    "name": "Upper Sideline 313"
+                },
+                {
+                    "id": 1942938,
+                    "name": "Upper Sideline 314"
+                },
+                {
+                    "id": 1942957,
+                    "name": "Upper Sideline 337"
+                },
+                {
+                    "id": 1942876,
+                    "name": "Upper Sideline 338"
+                },
+                {
+                    "id": 1942890,
+                    "name": "Upper Sideline 339"
+                },
+                {
+                    "id": 1942958,
+                    "name": "Upper Sideline 340"
+                },
+                {
+                    "id": 1942879,
+                    "name": "Upper Sideline 341"
+                },
+                {
+                    "id": 1942888,
+                    "name": "Upper Sideline 342"
+                }
+            ]
+        }
+    ]
+}
