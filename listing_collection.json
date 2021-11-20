@@ -1,0 +1,34 @@
+{
+    "eventId":"integer",
+    "totalListings":"integer",
+    "totalTickets":"integer",
+    "minQuantity":"integer",
+    "maxQuantity":"integer",
+    "numFound":"integer",
+    "start":"integer",
+    "rows":"integer",
+    "listings": [
+        {
+            "listingId":"integer",
+            "pricePerProduct": {"amount":"number", "currency":"string"},
+            "isGA":"integer",
+            "row":"string",
+            "quantity":"integer",
+            "products":[{"row":"string","seat":"string"}],
+            "sellerSectionName":"string",
+            "sectionName":"string",
+            "sectionId":"integer",
+            "isSectionMapped":"boolean",
+            "zone":"string",
+            "zoneId":"integer",
+            "splitOption":"splitOptionType",
+            "splitQuantity":"string",
+            "buyQuantityOptions":"array",
+            "sellerOwnInd":"integer",
+            "deliveryTypeList":[],
+            "listingAttributeList":[],
+            "listingAttributeCategoryList":[],
+            "facevalue":{ "amount":"number", "currency":"string"}
+        }
+    ]
+}
