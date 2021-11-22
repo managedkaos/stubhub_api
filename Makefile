@@ -2,7 +2,7 @@ run:
 	python algo.py
 
 server:
-	uvicorn main:app --reload
+	honcho start
 
 token:
 	python generate_access_token.py

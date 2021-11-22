@@ -5,7 +5,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from botocore.exceptions import ClientError
 import boto3
-import json
 import requests
 import os
 
@@ -71,20 +70,18 @@ app = FastAPI()
 
 @app.get("/")
 async def hello():
-    return {"details": "hello"}
+    return {"detail": "hello"}
 
 
 @app.get("/event/{eventId}")
 async def get_event(eventId):
-    for k, v in sorted(os.environ.items()):
-        print(k+':', v)
-        print('\n')
     database = boto3.resource('dynamodb', region_name=REGION_NAME)
     table = database.Table(DYNAMODB_TABLE)
+
     try:
         response = table.get_item(Key={'id': eventId})
     except ClientError as e:
-        message = "Client error. {}".format(e.response['Error']['Message'])
+        message = "Client error. {}. region_name={}; table_name={}".format(e.response['Error']['Message'], REGION_NAME, DYNAMODB_TABLE)
         print(message)
         raise HTTPException(status_code=404, detail=message)
     else:
@@ -95,52 +92,32 @@ async def get_event(eventId):
             raise HTTPException(status_code=404, detail="Item with ID={} not found.".format(eventId))
 
 
-@app.post("/create_event/")
-async def create_event(event: Event):
-    item = json.loads(event.json())
-    database = boto3.resource('dynamodb', region_name='us-west-1')
-    table = database.Table('stubhub-events-development')
-    try:
-        response = table.put_item(Item={
-            "id": str(item['id']),
-            "status": item['status'],
-            "locale": item['locale'],
-            "name": item['name'],
-            "description": item['description'],
-            "webURI": item['webURI'],
-            "eventDateLocal": item['eventDateLocal'],
-            "eventDateUTC":  item['eventDateUTC'],
-            "createdDate":  item['createdDate'],
-            "lastUpdatedDate":  item['lastUpdatedDate'],
-            "hideEventDate":  item['hideEventDate'],
-            "hideEventTime":  item['hideEventTime'],
-            "venue": item['venue'],
-            "timezone":  item['timezone'],
-            "currencyCode":  item['currencyCode'],
-            "ticketInfo": item['ticketInfo'],
-            "performers": item['performers'],
-            "ancestors": item['ancestors'],
-            "categoriesCollection": item['categoriesCollection']
-            })
-    except ClientError as e:
-        message = "Client error. {}".format(e.response['Error']['Message'])
-        print(message)
-        raise HTTPException(status_code=400, detail=message)
-    else:
-        print(response)
-        return response
-
-
 @app.post("/event/{eventId}")
 async def post_event(eventId):
-    headers = {'Authorization': 'Bearer {}'.format(STUBHUB_TOKEN)}
-    params = {'id': eventId}
-    response = requests.request("GET", STUBHUB_EVENTS_URL, params=params, headers=headers)
-    item = response.json()['events'][0]
-
-    database = boto3.resource('dynamodb', region_name=REGION_NAME)
-    table = database.Table(DYNAMODB_TABLE)
     try:
+        headers = {'Authorization': 'Bearer {}'.format(STUBHUB_TOKEN)}
+        params = {'id': eventId}
+        response = requests.request("GET", STUBHUB_EVENTS_URL, params=params, headers=headers)
+        print(response.text)
+    except requests.exceptions.RequestException as e:
+        message="Failed to connect to StubHub API. {}".format(e)
+        print(message)
+        raise HTTPException(status_code=500, detail=message)
+    else:
+        if "fault" in response.json():
+            message="Stubhub API fault. {}".format(response.json()['fault']['faultstring'])
+            print(message)
+            raise HTTPException(status_code=500, detail=message)
+        if "error" in response.json():
+            message="StubHub API error. {}".format(response.json()['error']['message'])
+            print(message)
+            raise HTTPException(status_code=404, detail=message)
+        else:
+            item = response.json()['events'][0]
+
+    try:
+        database = boto3.resource('dynamodb', region_name=REGION_NAME)
+        table = database.Table(DYNAMODB_TABLE)
         response = table.put_item(Item={
             "id": str(item['id']),
             "status": item['status'],
@@ -163,9 +140,9 @@ async def post_event(eventId):
             "categoriesCollection": item['categoriesCollection']
             })
     except ClientError as e:
-        message = "Client error. {}".format(e.response['Error']['Message'])
+        message = "DynamoDB client error. {}".format(e.response['Error']['Message'])
         print(message)
         raise HTTPException(status_code=400, detail=message)
     else:
         print(response)
-        return response
+        return response['ResponseMetadata']
