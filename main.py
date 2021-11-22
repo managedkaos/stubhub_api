@@ -10,6 +10,9 @@ import requests
 import os
 
 STUBHUB_TOKEN = os.getenv("STUBHUB_TOKEN")
+STUBHUB_EVENTS_URL = os.getenv("STUBHUB_EVENTS_URL")
+DYNAMODB_TABLE = os.getenv("DYNAMODB_TABLE")
+REGION_NAME = os.getenv("REGION_NAME")
 
 class Simple(BaseModel):
     id: Union[UUID, int, str]
@@ -72,9 +75,12 @@ async def hello():
 
 
 @app.get("/event/{eventId}")
-async def read_event(eventId):
-    database = boto3.resource('dynamodb', region_name='us-west-1')
-    table = database.Table('stubhub-events-development')
+async def get_event(eventId):
+    for k, v in sorted(os.environ.items()):
+        print(k+':', v)
+        print('\n')
+    database = boto3.resource('dynamodb', region_name=REGION_NAME)
+    table = database.Table(DYNAMODB_TABLE)
     try:
         response = table.get_item(Key={'id': eventId})
     except ClientError as e:
@@ -89,7 +95,7 @@ async def read_event(eventId):
             raise HTTPException(status_code=404, detail="Item with ID={} not found.".format(eventId))
 
 
-@app.post("/event/")
+@app.post("/create_event/")
 async def create_event(event: Event):
     item = json.loads(event.json())
     database = boto3.resource('dynamodb', region_name='us-west-1')
@@ -125,16 +131,15 @@ async def create_event(event: Event):
         return response
 
 
-@app.get("/event2/{eventId}")
-async def create_event2(eventId):
-    payload = {}
+@app.post("/event/{eventId}")
+async def post_event(eventId):
     headers = {'Authorization': 'Bearer {}'.format(STUBHUB_TOKEN)}
-    response = requests.request("GET", "https://api.stubhub.com/sellers/search/events/v3?id={}".format(eventId), headers=headers, data=payload)
+    params = {'id': eventId}
+    response = requests.request("GET", STUBHUB_EVENTS_URL, params=params, headers=headers)
     item = response.json()['events'][0]
-    print(item)
 
-    database = boto3.resource('dynamodb', region_name='us-west-1')
-    table = database.Table('stubhub-events-development')
+    database = boto3.resource('dynamodb', region_name=REGION_NAME)
+    table = database.Table(DYNAMODB_TABLE)
     try:
         response = table.put_item(Item={
             "id": str(item['id']),
