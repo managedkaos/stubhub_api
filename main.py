@@ -6,7 +6,10 @@ from pydantic import BaseModel
 from botocore.exceptions import ClientError
 import boto3
 import json
+import requests
+import os
 
+STUBHUB_TOKEN = os.getenv("STUBHUB_TOKEN")
 
 class Simple(BaseModel):
     id: Union[UUID, int, str]
@@ -34,6 +37,10 @@ class Ticketinfo(BaseModel):
     totalListings: int
 
 
+class EventId(BaseModel):
+    id: Union[UUID, int, str]
+
+
 class Event(BaseModel):
     id: Union[UUID, int, str]
     status: str
@@ -57,6 +64,11 @@ class Event(BaseModel):
 
 
 app = FastAPI()
+
+
+@app.get("/")
+async def hello():
+    return {"details": "hello"}
 
 
 @app.get("/event/{eventId}")
@@ -100,6 +112,47 @@ async def create_event(event: Event):
             "timezone":  item['timezone'],
             "currencyCode":  item['currencyCode'],
             "ticketInfo": item['ticketInfo'],
+            "performers": item['performers'],
+            "ancestors": item['ancestors'],
+            "categoriesCollection": item['categoriesCollection']
+            })
+    except ClientError as e:
+        message = "Client error. {}".format(e.response['Error']['Message'])
+        print(message)
+        raise HTTPException(status_code=400, detail=message)
+    else:
+        print(response)
+        return response
+
+
+@app.get("/event2/{eventId}")
+async def create_event2(eventId):
+    payload = {}
+    headers = {'Authorization': 'Bearer {}'.format(STUBHUB_TOKEN)}
+    response = requests.request("GET", "https://api.stubhub.com/sellers/search/events/v3?id={}".format(eventId), headers=headers, data=payload)
+    item = response.json()['events'][0]
+    print(item)
+
+    database = boto3.resource('dynamodb', region_name='us-west-1')
+    table = database.Table('stubhub-events-development')
+    try:
+        response = table.put_item(Item={
+            "id": str(item['id']),
+            "status": item['status'],
+            "locale": item['locale'],
+            "name": item['name'],
+            "description": item['description'],
+            "webURI": item['webURI'],
+            "eventDateLocal": item['eventDateLocal'],
+            "eventDateUTC":  item['eventDateUTC'],
+            "createdDate":  item['createdDate'],
+            "lastUpdatedDate":  item['lastUpdatedDate'],
+            "hideEventDate":  item['hideEventDate'],
+            "hideEventTime":  item['hideEventTime'],
+            #"venue": item['venue'],
+            "timezone":  item['timezone'],
+            "currencyCode":  item['currencyCode'],
+            #"ticketInfo": item['ticketInfo'],
             "performers": item['performers'],
             "ancestors": item['ancestors'],
             "categoriesCollection": item['categoriesCollection']
