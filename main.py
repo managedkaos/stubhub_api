@@ -118,7 +118,7 @@ async def post_event(eventId):
             print(item['ticketInfo'])
 
     try:
-        database = boto3.resource('dynamodb', region_name=REGION_NAME)
+        database = boto3.resource('dynamodb', region_name=REGION_NAME, endpoint_url=DYNAMODB_URL)
         table = database.Table(DYNAMODB_TABLE)
         response = table.put_item(Item={
             "id": item['id'],
