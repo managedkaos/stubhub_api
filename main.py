@@ -11,6 +11,7 @@ import os
 STUBHUB_TOKEN = os.getenv("STUBHUB_TOKEN")
 STUBHUB_EVENTS_URL = os.getenv("STUBHUB_EVENTS_URL")
 DYNAMODB_TABLE = os.getenv("DYNAMODB_TABLE")
+DYNAMODB_URL = os.getenv("DYNAMODB_URL")
 REGION_NAME = os.getenv("REGION_NAME")
 
 class Simple(BaseModel):
@@ -75,7 +76,7 @@ async def hello():
 
 @app.get("/event/{eventId}")
 async def get_event(eventId):
-    database = boto3.resource('dynamodb', region_name=REGION_NAME)
+    database = boto3.resource('dynamodb', region_name=REGION_NAME, endpoint_url=DYNAMODB_URL)
     table = database.Table(DYNAMODB_TABLE)
 
     try:
