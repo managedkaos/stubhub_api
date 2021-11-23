@@ -1,3 +1,4 @@
+from mangum import Mangum
 from datetime import datetime
 from typing import Union, List, Dict
 from fastapi import FastAPI, HTTPException
@@ -6,6 +7,9 @@ from botocore.exceptions import ClientError, EndpointConnectionError
 import boto3
 import requests
 import os
+
+stage = os.environ.get('OPERATION_MODE', "development")
+openapi_prefix = f"/{stage}" if stage else "/"
 
 STUBHUB_TOKEN = os.getenv("STUBHUB_TOKEN")
 STUBHUB_EVENTS_URL = os.getenv("STUBHUB_EVENTS_URL")
@@ -66,7 +70,7 @@ class Event(BaseModel):
     categoriesCollection: Dict[str, List[Simple]]
 
 
-app = FastAPI()
+app = FastAPI(title="backend", openapi_prefix=openapi_prefix)
 
 
 @app.get("/")
@@ -225,3 +229,7 @@ async def delete_event(eventId):
                 return {"id": eventId, "detail": "The target item has been deleted", "response": response['ResponseMetadata']}
         else:
             return {"id": eventId, "detail": "The target item was not found. But that's OK since you wanted to delete it anyway....right?", "response": response['ResponseMetadata']}
+
+
+handler = Mangum(app)
+

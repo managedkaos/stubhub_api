@@ -1,0 +1,39 @@
+service: backend
+package:
+  individually: true
+provider:
+  name: aws
+  runtime: python3.8
+  region: us-west-1
+  stage: ${opt:stage, "development"}
+plugins:
+  - serverless-python-requirements
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    layer:
+      name: backend
+      description: This is the API for the backend
+      compatibleRuntimes:
+        - python3.8
+functions:
+  app:
+    package:
+      include:
+        - "main.py"
+      exclude:
+        - "requirements.txt"
+        - "package.json"
+        - "package-lock.json"
+        - ".serverless/**"
+        - ".virtualenv/**"
+        - "node_modules/**"
+    handler: main.handler
+    environment:
+      STAGE: ${self:provider.stage}
+    layers:
+      - { Ref: PythonRequirementsLambdaLayer }
+    events:
+      - http:
+          method: any
+          path: /{proxy+}
