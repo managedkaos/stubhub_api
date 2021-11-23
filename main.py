@@ -1,5 +1,4 @@
 from datetime import datetime
-from uuid import UUID
 from typing import Union, List, Dict
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -73,7 +72,6 @@ app = FastAPI()
 @app.get("/")
 async def hello():
     return {"detail": "hello"}
-
 
 @app.get("/events")
 async def get_events():
@@ -196,10 +194,12 @@ async def post_event(eventId):
 
 @app.delete("/event/{eventId}")
 async def delete_event(eventId):
+    database = boto3.resource('dynamodb', region_name=REGION_NAME, endpoint_url=DYNAMODB_URL)
+    table = database.Table(DYNAMODB_TABLE)
+
+    # Read to see if the item is there
     try:
-        database = boto3.resource('dynamodb', region_name=REGION_NAME, endpoint_url=DYNAMODB_URL)
-        table = database.Table(DYNAMODB_TABLE)
-        response = table.delete_item(Key={'id': int(eventId)})
+        response = table.get_item(Key={'id': int(eventId)})
     except ClientError as e:
         message = "DyanmoDB client error. {}. region_name={}; table_name={}".format(e.response['Error']['Message'], REGION_NAME, DYNAMODB_TABLE)
         print(message)
@@ -209,5 +209,19 @@ async def delete_event(eventId):
         print(message)
         raise HTTPException(status_code=500, detail=message)
     else:
-        print(response)
-        return response['ResponseMetadata']
+        if 'Item' in response:
+            try:
+                response = table.delete_item(Key={'id': int(eventId)})
+            except ClientError as e:
+                message = "DyanmoDB client error. {}. region_name={}; table_name={}".format(e.response['Error']['Message'], REGION_NAME, DYNAMODB_TABLE)
+                print(message)
+                raise HTTPException(status_code=500, detail=message)
+            except EndpointConnectionError as e:
+                message = "DynamoDB client error. {}. region_name={}; table_name={}".format(e, REGION_NAME, DYNAMODB_TABLE)
+                print(message)
+                raise HTTPException(status_code=500, detail=message)
+            else:
+                print(response)
+                return {"id": eventId, "detail": "The target item has been deleted", "response": response['ResponseMetadata']}
+        else:
+            return {"id": eventId, "detail": "The target item was not found. But that's OK since you wanted to delete it anyway....right?", "response": response['ResponseMetadata']}
