@@ -81,13 +81,13 @@ async def get_events():
     table = database.Table(DYNAMODB_TABLE)
 
     response = table.scan()
-    data = response['Items']
+    events = response['Items']
 
     while 'LastEvaluatedKey' in response:
         response = table.scan(ExclusiveStartKey=response['LastEvaluatedKey'])
-        data.extend(response['Items'])
+        events.extend(response['Items'])
 
-    return data
+    return {"total": len(events), "events": events}
 
 
 @app.get("/event/{eventId}")
