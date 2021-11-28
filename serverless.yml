@@ -6,6 +6,16 @@ provider:
   runtime: python3.8
   region: us-west-1
   stage: ${opt:stage, "development"}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+       - dynamodb:Query
+       - dynamodb:Scan
+       - dynamodb:GetItem
+       - dynamodb:PutItem
+       - dynamodb:UpdateItem
+       - dynamodb:DeleteItem
+      Resource: "arn:aws:dynamodb:us-west-1:264318998405:table/stubhub-events-development"
 plugins:
   - serverless-python-requirements
 custom:
@@ -31,6 +41,11 @@ functions:
     handler: main.handler
     environment:
       STAGE: ${self:provider.stage}
+      OPERATION_MODE: development
+      STUBHUB_TOKEN: uk3confw0fizdfvatrbzahyyb4ovpz3bm6s9edc2
+      STUBHUB_EVENTS_URL: https://api.json-generator.com/templates/ljsdksoT2-Ls/data
+      DYNAMODB_URL: https://dynamodb.us-west-1.amazonaws.com
+
     layers:
       - { Ref: PythonRequirementsLambdaLayer }
     events:
