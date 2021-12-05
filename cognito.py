@@ -1,15 +1,45 @@
-from pycognito import Cognito
 import os
-stage = os.environ.get('OPERATION_MODE', "development")
+import boto3
+import hmac
+import hashlib
+import base64
 
+from dotenv import load_dotenv, find_dotenv
 
-COGNITO_USER_POOL_ID=os.environ.get('COGNITO_USER_POOL_ID')
-COGNITO_CLIENT_ID=os.environ.get('COGNITO_CLIENT_ID')
-COGNITO_CLIENT_SECRET=os.environ.get('COGNITO_CLIENT_SECRET')
+dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
 
-u = Cognito(COGNITO_USER_POOL_ID,COGNITO_CLIENT_ID, client_secret=COGNITO_CLIENT_SECRET)
+load_dotenv(find_dotenv())
 
-users = u.get_users(attr_map={"given_name":"first_name","family_name":"last_name","email":"email"})
+COGNITO_USER_POOL_ID = os.getenv('COGNITO_USER_POOL_ID')
+COGNITO_CLIENT_ID = os.getenv('COGNITO_CLIENT_ID')
+COGNITO_CLIENT_SECRET = os.getenv('COGNITO_CLIENT_SECRET')
+REGION_NAME = os.getenv('REGION_NAME')
 
-for user in users:
-    print(user)
+username = "edward.example@example.com"
+password = "ThispasswordisAmazingfor2021!"
+
+client = boto3.client("cognito-idp")
+
+response = client.list_users(
+    UserPoolId=COGNITO_USER_POOL_ID,
+    AttributesToGet=['email'],
+    Limit=10,
+)
+
+print(response)
+
+message = username + COGNITO_CLIENT_ID
+dig = hmac.new(bytearray(COGNITO_CLIENT_SECRET, "utf-8"), msg=message.encode('UTF-8'),
+               digestmod=hashlib.sha256).digest()
+secret_hash = base64.b64encode(dig).decode()
+
+response = client.admin_initiate_auth(
+    AuthFlow='USER_SRP_AUTH',
+    UserPoolId=COGNITO_USER_POOL_ID,
+    AuthParameters={
+        'USERNAME': username,
+        'PASSWORD': password,
+        'SECRET_HASH': secret_hash
+    },
+    ClientId=COGNITO_CLIENT_ID
+)
