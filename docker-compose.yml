@@ -1,0 +1,38 @@
+version: '3.4'
+
+services:
+  dynamodb:
+    image: amazon/dynamodb-local
+    container_name: dynamodb
+    command: -jar DynamoDBLocal.jar -inMemory -sharedDb
+    ports:
+      - '8000:8000'
+    networks:
+      default:
+  dynamodb-init:
+    image: amazon/aws-cli
+    container_name: dynamodb-init
+    env_file:
+      - local.env
+    command: dynamodb create-table --cli-input-json file:///aws/dynamodb-table-config.json --endpoint-url http://dynamodb:8000
+    depends_on:
+      - dynamodb
+    volumes:
+      - ./dynamodb-table-config.json:/aws/dynamodb-table-config.json
+    networks:
+      default:
+  backend:
+    image: backend
+    container_name: backend
+    env_file:
+      - local.env
+    ports:
+      - '9000:9000'
+    depends_on:
+      - dynamodb-init
+    networks:
+      default:
+networks:
+  default:
+    name: stubhub
+

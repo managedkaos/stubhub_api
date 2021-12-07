@@ -257,3 +257,4 @@ dist
 .pnp.*
 templates
 static
+.localstack

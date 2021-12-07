@@ -1,5 +1,5 @@
 {
-    "TableName": "stubhub-events-development",
+    "TableName": "stubhub-events-local",
     "KeySchema": [ { "AttributeName": "id", "KeyType": "HASH" } ],
     "AttributeDefinitions": [ { "AttributeName": "id", "AttributeType": "N" } ],
     "ProvisionedThroughput": { "ReadCapacityUnits": 5, "WriteCapacityUnits": 5 }

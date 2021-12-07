@@ -8,15 +8,15 @@ import boto3
 import requests
 import os
 
-stage = os.environ.get('OPERATION_MODE', "development")
-openapi_prefix = f"/{stage}" if stage else "/"
+# stage = os.environ.get('OPERATION_MODE', "development")
+# openapi_prefix = f"/{stage}" if stage else "/"
 
 STUBHUB_TOKEN = os.getenv("STUBHUB_TOKEN")
 STUBHUB_EVENTS_URL = os.getenv("STUBHUB_EVENTS_URL")
-DYNAMODB_TABLE = os.getenv("DYNAMODB_TABLE", "stubhub-events-development")
-DYNAMODB_URL = os.getenv("DYNAMODB_URL", "http://localhost:7500")
-REGION_NAME = os.getenv("REGION_NAME", "us-west-1")
-OPERATION_MODE = os.getenv("OPERATION_MODE", "development")
+DYNAMODB_TABLE = os.getenv("DYNAMODB_TABLE")
+DYNAMODB_URL = os.getenv("DYNAMODB_URL")
+REGION_NAME = os.getenv("REGION_NAME")
+OPERATION_MODE = os.getenv("OPERATION_MODE")
 
 class Simple(BaseModel):
     id: int
@@ -70,7 +70,7 @@ class Event(BaseModel):
     categoriesCollection: Dict[str, List[Simple]]
 
 
-app = FastAPI(title="backend", openapi_prefix=openapi_prefix)
+app = FastAPI(title="backend") #, openapi_prefix=openapi_prefix)
 
 
 @app.get("/")
