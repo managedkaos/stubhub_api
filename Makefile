@@ -11,7 +11,7 @@ stop-dynamodb:
 table:
 	aws dynamodb create-table \
 		--cli-input-json file://dynamodb-table-config.json \
-		--endpoint-url http://localhost:7500 || echo "All good! table is likely already there."
+		--endpoint-url http://localhost:8000 || echo "All good! table is likely already there."
 
 events:
 	cheat post-to-local-api-with-path-variables | bash
@@ -21,3 +21,21 @@ token:
 
 algo:
 	python algo.py
+
+build:
+	@docker build --tag backend .
+
+logs:
+	@docker compose logs
+
+detach: down
+	@docker compose up --detach -e STUBHUB_TOKEN=$(STUBHUB_TOKEN)
+
+up: down
+	@docker compose up -e STUBHUB_TOKEN=$(STUBHUB_TOKEN)
+
+down:
+	@docker compose down --rmi local
+
+init:
+	./init-local-environment.sh

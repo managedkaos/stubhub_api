@@ -39,9 +39,9 @@ async def login(request: Request):
 
 @app.get("/events", response_class=HTMLResponse)
 async def events(request: Request):
-    response = requests.request("GET", "http://127.0.0.1:8000/events")
+    response = requests.request("GET", "http://127.0.0.1:9000/events")
     return templates.TemplateResponse("events.html", {"request": request, "events": response.json()['events']})
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=9000)
+    uvicorn.run(app, host="0.0.0.0", port=9001)
