@@ -1,5 +1,11 @@
 FROM python:3.9
+ARG TARGET
+ENV TARGET_NAME=${TARGET}
 COPY requirements.txt /
 RUN pip install --no-cache-dir --upgrade -r /requirements.txt
-COPY backend.py /
-CMD ["uvicorn", "backend:app", "--host", "0.0.0.0", "--port", "9000"]
+RUN echo ${TARGET}
+EXPOSE 9000
+COPY . /
+CMD uvicorn ${TARGET_NAME}:app --host=0.0.0.0 --port=9000
+#COPY ${TARGET}.py /
+#CMD ["uvicorn", ${TARGET_NAME}":app", "--host", "0.0.0.0", "--port", "9000"]

@@ -30,6 +30,15 @@ services:
       - stubhub-api
     networks:
       default:
+  frontend:
+    image: frontend
+    container_name: frontend
+    ports:
+      - '9001:9000'
+    depends_on:
+      - backend
+    networks:
+      default:
 networks:
   default:
     name: stubhub
