@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  dynamodb:
+    image: amazon/dynamodb-local
+    container_name: dynamodb
+    command: -jar DynamoDBLocal.jar -inMemory -sharedDb
+    ports:
+      - '8000:8000'
+  test:
+    build: .
+    container_name: testing_1_2_3
+  dynamodb-init:
+    image: amazon/aws-cli
+    container_name: dynamodb-init
+    environment:
+      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION}
+      AWS_ACCESS_KEY_ID: 1234567890
+      AWS_SECRET_ACCESS_KEY: 1234567890
+    command: dynamodb create-table --cli-input-json file:///aws/dynamodb-table-config.json --endpoint-url http://dynamodb:8000
+    depends_on:
+      - dynamodb-wait
+    volumes:
+      - ./dynamodb-table-config.json:/aws/dynamodb-table-config.json
