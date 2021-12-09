@@ -1,0 +1,12 @@
+Dockerfile
+Makefile
+backend.py
+docker-compose.yml
+dynamodb-table-config.json
+frontend.py
+init-local-environment.sh
+local.env
+requirements.txt
+serverless.yml
+static/
+templates/
