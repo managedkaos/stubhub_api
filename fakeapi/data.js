@@ -4,8 +4,8 @@ const generateEventsData = (number) => {
   const events = [];
   while (number >= 0) {
     events.push({
-           id: 100+number,
-           status: faker.random.boolean(),
+           id: number,
+           status: faker.datatype.boolean(),
            locale: faker.random.locale(),
            name: faker.random.word(),
            description: faker.lorem.paragraph(),
@@ -25,17 +25,17 @@ const generateEventsData = (number) => {
                country: faker.random.word(),
                venueConfigId: faker.random.word(),
                venueConfigName: faker.random.word(),
-               latitude: faker.random.number(),
-               longitude: faker.random.number()
+               latitude: faker.datatype.number(),
+               longitude: faker.datatype.number()
            },
            timezone: faker.random.word(),
            currencyCode: faker.random.word(),
            ticketInfo: {
-               minPrice: faker.random.number(),
-               minListPrice: faker.random.number(),
-               maxListPrice: faker.random.number(),
-               totalTickets: faker.random.number(),
-               totalListings: faker.random.number()
+               minPrice: faker.datatype.number(),
+               minListPrice: faker.datatype.number(),
+               maxListPrice: faker.datatype.number(),
+               totalTickets: faker.datatype.number(),
+               totalListings: faker.datatype.number()
            },
            performers: faker.random.word(),
            ancestors: faker.random.word(),
@@ -48,5 +48,5 @@ const generateEventsData = (number) => {
 };
 fs.writeFileSync(
   "./db.json",
-  JSON.stringify({ events: generateEventsData(10) })
+  JSON.stringify({ events: generateEventsData(100000) })
 );

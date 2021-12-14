@@ -25,6 +25,8 @@ services:
       - local.env
     ports:
       - '9000:9000'
+    volumes:
+      - ./backend.py:/backend.py
     depends_on:
       - dynamodb-init
       - stubhub-api
@@ -35,6 +37,8 @@ services:
     container_name: frontend
     ports:
       - '9001:9000'
+    volumes:
+      - ./frontend.py:/frontend.py
     depends_on:
       - backend
     networks:

@@ -23,7 +23,8 @@ algo:
 	python algo.py
 
 build:
-	@docker build --tag backend .
+	@docker build --tag=backend --build-arg TARGET=backend .
+	@docker build --tag=frontend --build-arg TARGET=frontend .
 
 logs:
 	@docker compose logs
